@@ -22,7 +22,17 @@ $(function() {
 	const toggle = document.getElementById('translate-btn');
 	const html = document.documentElement;
 	
-	let currentLang = 'en';
+	// Load saved language
+	let savedLang = localStorage.getItem('site-lang') || 'en';
+	
+	html.setAttribute('data-lang', savedLang);
+	html.setAttribute('lang', savedLang);
+	
+	if (savedLang === 'es') {
+	  toggle.checked = true;
+	}
+	
+	let currentLang = savedLang;
 	
 	toggle.addEventListener('change', (e) => {
 
@@ -34,8 +44,11 @@ $(function() {
 	
 	  setTimeout(() => {
 		  currentLang = currentLang === 'en' ? 'es' : 'en';
+		  
 		  html.setAttribute('data-lang', currentLang);
 		  html.setAttribute('lang', currentLang);
+		  
+		  localStorage.setItem('site-lang', currentLang);
 		
 		  animatedBlocks.forEach(block => {
 			block.classList.remove('fade-out');
