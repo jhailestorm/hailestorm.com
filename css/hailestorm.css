@@ -7653,7 +7653,12 @@ footer {
 }
 footer .inner-wrapper {
   background-color: #1b213f;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
+}
+@media (max-width: 767px) {
+  footer .inner-wrapper {
+    margin-bottom: 25%;
+  }
 }
 footer h2,
 footer h3,
