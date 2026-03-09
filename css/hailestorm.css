@@ -7540,6 +7540,7 @@ html[data-lang="es"] .lang-color-es {
 }
 .navigation .translate-btn .en-es-label .es {
   color: #e57d00;
+  font-weight: 400;
 }
 .navigation .translate-btn input {
   -webkit-appearance: none;
