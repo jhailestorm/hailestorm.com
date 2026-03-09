@@ -7281,9 +7281,32 @@ html[data-lang="es"] .lang-color-es {
 }
 .card.metric {
   padding: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
   background-color: rgba(229, 125, 0, 0.2);
   border-left: 4px solid #e57d00;
+}
+@media (min-width: 768px) {
+  .card.metric {
+    margin-bottom: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .card.metric {
+    margin-bottom: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .card.metric {
+    margin-bottom: 1.25rem;
+  }
 }
 .card.metric h5 {
   font-weight: 600;
@@ -7818,6 +7841,18 @@ section .text-overlay-on-image {
 }
 section .text-overlay-on-image {
   padding: 5rem;
+}
+@media (min-width: 768px) {
+  section.results .row.metric-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.results .row .metric-wrapper {
+    margin-bottom: 2.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .case-study-page .hero h1 {
