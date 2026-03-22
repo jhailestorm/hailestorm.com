@@ -7317,8 +7317,13 @@ html[data-lang="es"] .lang-color-es {
 /* **** Card Styles **** */
 /* **** Colors **** */
 /* **** Icons Styles **** */
-.icon {
+.icon,
+.glyphicon {
   font-family: 'Font Awesome 5 Pro';
+}
+.glyphicon.glyphicon-chevron-left:before,
+.glyphicon .glyphicon-chevron-right:before {
+  content: " ";
 }
 .icon.small {
   font-size: 1.3755rem;
@@ -7648,7 +7653,7 @@ html[data-lang="es"] .lang-color-es {
     color: #ffffff;
   }
   .navigation .menu-links li a:hover {
-    color: #ffffff;
+    color: #e57d00;
   }
   .navigation .menu-links li:first-child {
     padding-left: 0 !important;
