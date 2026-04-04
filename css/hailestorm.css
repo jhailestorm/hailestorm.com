@@ -7314,16 +7314,23 @@ html[data-lang="es"] .lang-color-es {
 .card.metric p {
   margin-bottom: 0;
 }
+.carousel-indicators li {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 /* **** Card Styles **** */
 /* **** Colors **** */
 /* **** Icons Styles **** */
-.icon,
 .glyphicon {
   font-family: 'Font Awesome 5 Pro';
 }
 .glyphicon.glyphicon-chevron-left:before,
 .glyphicon .glyphicon-chevron-right:before {
   content: " ";
+}
+.icon {
+  font-family: 'Font Awesome 5 Pro';
 }
 .icon.small {
   font-size: 1.3755rem;
@@ -7869,4 +7876,13 @@ section .text-overlay-on-image {
 }
 .case-study-page .hero p {
   margin-bottom: 0.75rem;
+}
+.case-study-page .hero h5 .icon {
+  font-size: 1.125rem;
+}
+@media (min-width: 992px) {
+  .case-study-page .hero h5 .icon {
+    font-size: 1.3755rem;
+    vertical-align: middle;
+  }
 }
